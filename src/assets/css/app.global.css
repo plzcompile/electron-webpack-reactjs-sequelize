@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-color{
+  color: white;
+}
+:root{
+  min-width: 200px;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #242323;
+  /* width: auto;
+  height:auto; 
+  #2D2828;
+  #000000e2;
+  */
+}
+
+g{
+ fill:#63B3ED;
+}
+.baseContainer{
+  background-color:#2982c2;
+  opacity: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #1a61b3; 
+  /* #1a61b3 */
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #094c7c inset
+
+}
+::-webkit-resizer {
+  /* display: none; */
+
+  background-color:#2982c2;
+
+}
+textarea::-webkit-scrollbar {
+  width: 1em;
+  color:red;
+ 
+}
+textarea{
+  resize:none!important;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: #094c7c;
+}
+
+textarea::-webkit-scrollbar-thumb {
+background-color: #2982c2;
+
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #63B3ED;
+}
+input::-webkit-input-placeholder {
+  -webkit-text-fill-color: #2982c2;
+  color: #2982c2;
+}
+textarea::-webkit-input-placeholder {
+  -webkit-text-fill-color: #2982c2;
+  color: #2982c2;
+}
+.bottomContainer{
+  /* min-height: 100vh; */
+  position: relative;
+  /* margin-top:57vh; */
+}
+
+input{
+  -webkit-text-fill-color: #63B3ED;
+}
+.footer {
+  background-color:#094c7c;
+
+}
+.blue-font {
+  color:#63B3ED;
+}
+.blue-font2{
+  color:#094c7c
+}
+.dateTimelineColor{
+  color: #63B3ED;
+}
+::before {
+  color:#2982c2!important;
+  background-color:#2982c2!important;
+}
+
+.timelinePanelColor{
+  background-color:#094c7c!important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.activated {
+  border-left: 6px solid #63B3ED;
+  height: auto;
+}
+#shadow-root section.section{
+  background-color:red!important;
+}
+/* .amplify-form-section */
+.amplify-section .section {
+  background-color:red!important;
+}
+.amplify-sign-in{
+  background-color:red!important;
+}
+/*FONT Styling :: Note :: Prob need to switch these to woff/woff2 to optimize*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+/*Main headings*/
+h1,h2,h3{
+  font-family: "Arimo", sans-serif!important;
+}
+h4 {
+  font-family: "Mukta", sans-serif!important;
+}
+p,a,span{
+  font-family: "Hind Madurai", sans-serif!important;
+}
+
+.main-container{
+    position: absolute;
+    width:  calc(100vw)!important; 
+    height: calc(100vh)!important;
+    display: inline-block;
+    bottom: 0px;
+}
+
+.title-bar-container {     
+    -webkit-app-region: no-drag;
+    position: relative;
+    height:5vh;
+    min-height:30px;
+    max-height:34px;
+    z-index: 9999999;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    overflow-anchor: top;
+    background-color:#242323dc;
+}
+
+.phantom-drag-container{
+    position: absolute;
+    margin-top:5px;
+    width:100%;
+    height:100%;
+    -webkit-app-region: drag;
+}
+
+.content-container{
+  position: relative;
+  display: inline-block;
+  height: calc(100vh  - 90px);
+  width: 100%;
+  overflow-x: auto;
+  background-color: #2e2c2c;
+}
+
+.bottom-container{
+  -webkit-app-region: no-drag;
+  height:30px;
+  min-height:30px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 99999993;
+  width: 100%;
+  border: none !important;
+}
+
+.window-controls-container {
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
+  position: absolute;
+  right:0;
+}
+
+.app-name-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.app-title{
+  margin-bottom:1px;
+  font-size:1.5em !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+
+.button{
+  -webkit-app-region: no-drag; 
+  font-size:12px;
+  width:30px;
+  height:100%;
+  outline: none!important;
+}
+
